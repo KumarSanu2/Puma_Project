@@ -2,10 +2,6 @@ body{
     margin:0px;
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
-.main-div{
-    /*position: relative;*/
-    
-}
 .red-div {
     /*position:relative;*/
     height: 140px; 
@@ -89,7 +85,6 @@ body{
 }
 .filter-main{
     border-top: 0.5px solid #ccc;
-    border-buttom: 0.5px solid #ccc;
     margin-left: 30px;
     margin-right:30px;
     display: flex;
