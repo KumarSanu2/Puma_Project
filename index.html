@@ -5,7 +5,7 @@
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>puma project</title>
-    <link rel="stylesheet" href="./ankit/style.css">
+    <link rel="stylesheet" href="style.css">
     <style id="__tw-11iev94">
         body {
             font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
@@ -3281,29 +3281,55 @@
                     </div>
                 </section>
             </aside>
-            <nav>
-                <div class="container">
-                    <div class="logo">
-                        <img src="data:image/png;base64,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" alt="">
-                    </div>
-                    <div class="links">
-                        <a href="">NEW</a>
-                        <a href="">WOMEN</a>
-                        <a href="">MENS</a>
-                        <a href="">KIDS</a>
-                        <a href="">FENTYXPUMA</a>
-                        <a href="">MOTORSPORTS</a>
-                        <a href="">COLLABORTIONS</a>
-                        <a href="">SPORTS</a>
-                        <a href="">OUTLET</a>
-
-
-                    </div>
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+            <nav class="navbar">
+                <div class="navbar-container container">
+                  <a href="#" class="navbar-brand">
+                    <img src="images/favicon.png" alt="Logo" class="navbar-logo" />
+                  </a>
+                  <div class="navbar-nav">
+                    <ul class="navbar-menu">
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">New</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Women</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Men</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Kids</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">FENTY X PUMA</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Motorsport</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Collaborations</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Sports</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Outlet</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="navbar-actions">
+                    <button class="navbar-search-btn">
+                      <i class=""></i>
+                    </button>
+                    <button class="navbar-cart-btn">
+                      <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <a href="#" class="navbar-user-btn">
+                      <img src="user.png" alt="User" class="navbar-user-img" />
+                    </a>
+                  </div>
                 </div>
-            </nav>
+              </nav>
            
             
             <div id="nav-bar-sticky" class="relative z-30 sticky top-[0px]">
@@ -3542,167 +3568,12 @@
                                         <li role="none" class="whitespace-normal"><a aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal" data-link-name="Sustainable Collection"
                                                 data-link-location="top-nav-level-2-side" role="menuitem" href="/in/en/mens/mens-sustainability">Sustainable Collection</a></li>
                                     </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Shoes">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Shoes" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/mens/mens-shoes">Shoes</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Sneakers" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-sneakers">Sneakers</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Running" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-running">Running</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Walking" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-walking">Walking</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Training &amp; Gym" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-training-and-gym">Training &amp; Gym</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Slip-ons" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-slip-ons">Slip-ons</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Sandals &amp; Flip Flops" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens-sandals-slides-flip-flops-slippers">Sandals &amp; Flip Flops</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Motorsport" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-motorsport">Motorsport</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Cricket" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-cricket">Cricket</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Badminton" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-badminton">Badminton</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Basketball" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-basketball">Basketball</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Football" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-football">Football</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Softride" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-softride">Softride</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Nitro" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-nitro">Nitro</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="TRC Blaze" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-shoes/mens-shoes-trc-blaze">TRC Blaze</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Clothing">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Clothing" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/mens/mens-clothing">Clothing</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="T-Shirts: Active &amp; Casual"
-                                                data-link-location="top-nav-level-3" href="/in/en/mens/mens-clothing/mens-clothing-t-shirts-and-tops">T-Shirts: Active &amp; Casual</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Polos" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-polos">Polos</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Jackets" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-jackets">Jackets</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Sweatshirts &amp; Hoodies" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-sweatshirts-and-hoodies">Sweatshirts &amp; Hoodies</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Pants" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-pants">Pants</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Shorts" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-shorts">Shorts</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Tracksuits" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-tracksuits">Tracksuits</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Team Jerseys" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-jerseys">Team Jerseys</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Homewear" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-homewear">Homewear</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Thermals &amp; Winterwear" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-winterwear">Thermals &amp; Winterwear</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Innerwear" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-underwear">Innerwear</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Motorsport" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-clothing/mens-clothing-motorsport">Motorsport</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Accessories">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Accessories" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/mens/mens-accessories">Accessories</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Caps &amp; Beanies" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-hats-and-headwear">Caps &amp; Beanies</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Backpacks" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-backpacks">Backpacks</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Bags: Gym &amp; Casual" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-bags">Bags: Gym &amp; Casual</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Socks" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-clothing-socks">Socks</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Face Masks" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-face-masks">Face Masks</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Gloves" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-gloves">Gloves</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Sports Equipment" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-sports-equipment">Sports Equipment</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Wallets" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-wallets">Wallets</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Water Bottles" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-water-bottle">Water Bottles</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Motorsport" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-motorsport">Motorsport</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Eyewear" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-accessories/mens-accessories-eye-wear">Eyewear</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Sports">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Sports" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/mens/mens-sport">Sports</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Cricket" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-cricket">Cricket</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Football" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-football">Football</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Basketball" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-basketball">Basketball</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Running" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-running">Running</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Training &amp; Gym" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-training-and-gym">Training &amp; Gym</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Badminton" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-badminton">Badminton</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Golf" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-golf">Golf</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Yoga" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-sport/mens-sport-yoga">Yoga</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Motorsport">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Motorsport" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/mens/mens-motorsport">Motorsport</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Scuderia Ferrari" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-motorsport/mens-motorsport-scuderia-ferrari">Scuderia Ferrari</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="BMW M Motorsport" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-motorsport/mens-motorsport-bmw-m-motorsport">BMW M Motorsport</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Mercedes AMG Petronas" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-motorsport/mens-motorsport-mercedes-amg-petronas">Mercedes AMG Petronas</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Porsche Legacy" data-link-location="top-nav-level-3"
-                                                href="/in/en/mens/mens-motorsport/mens-motorsport-porsche-legacy">Porsche Legacy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-test-id="main-nav-category-item" role="none" class="group whitespace-nowrap flex">
-                        <div class="flex self-stretch hover:nav-fade-non-selected" data-test-id="hoverable-nav-item">
-                            <div class="flex-1 flex relative"><a aria-disabled="false" class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold" data-link-name="Kids" data-link-location="top-nav-level-1" role="menuitem" aria-haspopup="true" aria-expanded="false"
-                                    href="/in/en/kids"><span class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected">Kids</span></a></div>
-                            <div class="scale-y-100 opacity-100 absolute left-0 bottom-0 origin-top translate-y-full bg-white flex w-full text-puma-black-400 overflow-x-auto shadow-xl py-10 xl:py-12 transition-[transform,opacity] duration-0 scale-y-0 z-0"
-                                data-test-id="secondary-nav-menu">
-                                <div class="flex w-full max-w-screen-3xl mx-auto px-10">
-                                    <ul class="w-1/5 min-w-48 flex flex-col pr-8 space-y-1" role="menu" aria-label="Kids">
-                                        <li role="none" class="whitespace-normal"><a aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal" data-link-name="Kids&#x27; Store" data-link-location="top-nav-level-2-side"
-                                                role="menuitem" href="/in/en/kids/kids-store">Kids&#x27; Store</a></li>
-                                        <li role="none" class="whitespace-normal"><a aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal" data-link-name="Sale" data-link-location="top-nav-level-2-side"
-                                                role="menuitem" href="/in/en/kids/kids-sale">Sale</a></li>
-                                        <li role="none" class="whitespace-normal"><a aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal" data-link-name="New &amp; Trending"
-                                                data-link-location="top-nav-level-2-side" role="menuitem" href="/in/en/kids/kids-new-arrivals">New &amp; Trending</a></li>
-                                        <li role="none" class="whitespace-normal"><a aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal" data-link-name="School Store" data-link-location="top-nav-level-2-side"
-                                                role="menuitem" href="/in/en/kids/kids-collections/kids-collections-school-store">School Store</a></li>
-                                        <li role="none" class="whitespace-normal"><a href="https://in.puma.com/in/en/kids?pref_minPrice=1000&amp;pref_maxPrice=3000&amp;pref_productdivName=Footwear&amp;offset=24" aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal"
-                                                data-link-name="Shoes Under ₹3000" data-link-location="top-nav-level-2-side" role="menuitem">Shoes Under ₹3000</a></li>
-                                        <li role="none" class="whitespace-normal"><a href="https://in.puma.com/in/en/kids?pref_productdivName=Apparel&amp;pref_minPrice=0&amp;pref_maxPrice=1000&amp;offset=24" aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal"
-                                                data-link-name="Clothing Under ₹1000" data-link-location="top-nav-level-2-side" role="menuitem">Clothing Under ₹1000</a></li>
-                                        <li role="none" class="whitespace-normal"><a aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal" data-link-name="Motorsport" data-link-location="top-nav-level-2-side"
-                                                role="menuitem" href="/in/en/kids/kids-motorsport">Motorsport</a></li>
-                                        <li role="none" class="whitespace-normal"><a aria-disabled="false" data-test-id="top-nav-level-2-side" class="tw-hqslau tw-xbcb1y text-puma-black-300 hover:text-puma-gold font-bold text-lg leading-6 whitespace-normal" data-link-name="one8" data-link-location="top-nav-level-2-side"
-                                                role="menuitem" href="/in/en/kids/kids-collections/kids-collections-one8">one8</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Season&#x27;s Favourites">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Season&#x27;s Favourites" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/kids/kids-collections">Season&#x27;s Favourites</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="PUMA x MIRACULOUS" data-link-location="top-nav-level-3"
-                                                href="/in/en/collaborations/collaborations-select/collaborations-select-miraculous">PUMA x MIRACULOUS</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="School Store" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-collections/kids-collections-school-store">School Store</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Super Puma" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-collections/kids-collection-super-puma">Super Puma</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Sets" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-tracksuits">Sets</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Homewear" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-collections/kids-collections-homewear">Homewear</a></li>
-                                    </ul>
+                                    
+                                    
+                                    
+                                    
+                   
+                                    
                                     <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Boys">
                                         <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Boys" data-link-location="top-nav-level-2-top"
                                                 href="/in/en/kids/kids-boys">Boys</a></li>
@@ -3721,104 +3592,14 @@
                                                         href="/in/en/kids/kids-boys/kids-boys-shoes/kids-boys-shoes-school-shoes">School Shoes</a></li>
                                             </ul>
                                         </li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="Clothing" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-boys/kids-boys-clothing">Clothing</a>
-                                            <ul class="pt-1 pb-2">
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="T-Shirts " data-link-location="top-nav-level-4"
-                                                        href="/in/en/kids/kids-boys/kids-boys-clothing/kids-boys-clothing-tops">T-Shirts </a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Hoodies &amp; Sweatshirts"
-                                                        data-link-location="top-nav-level-4" href="/in/en/kids/kids-boys/kids-boys-clothing/kids-boys-clothing-hoodies-sweatshirt">Hoodies &amp; Sweatshirts</a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Pants &amp; Shorts"
-                                                        data-link-location="top-nav-level-4" href="/in/en/kids/kids-boys/kids-boys-clothing/kids-boys-clothing-bottoms">Pants &amp; Shorts</a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Jackets" data-link-location="top-nav-level-4"
-                                                        href="/in/en/kids/kids-boys/kids-boys-clothing/kids-boys-clothing-jackets">Jackets</a></li>
-                                            </ul>
-                                        </li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="AGE 0-4 YEARS"
-                                                data-link-location="top-nav-level-3" href="/in/en/kids/kids-boys/kids-boys-age-0-4-years">AGE 0-4 YEARS</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="AGE 4-8 YEARS"
-                                                data-link-location="top-nav-level-3" href="/in/en/kids/kids-boys/kids-boys-age-4-8-years">AGE 4-8 YEARS</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="AGE 8-16 YEARS"
-                                                data-link-location="top-nav-level-3" href="/in/en/kids/kids-boys/kids-boys-age-8-16-years">AGE 8-16 YEARS</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Girls">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Girls" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/kids/kids-girls">Girls</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="Bags &amp; Accessories"
-                                                data-link-location="top-nav-level-3" href="/in/en/kids/kids-girls/kids-girls-accessories">Bags &amp; Accessories</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="Shoes" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-girls/kids-girls-shoes">Shoes</a>
-                                            <ul class="pt-1 pb-2">
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Casual" data-link-location="top-nav-level-4"
-                                                        href="/in/en/kids/kids-girls/kids-girls-shoes/kids-girls-shoes-casual-shoes">Casual</a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Sports" data-link-location="top-nav-level-4"
-                                                        href="/in/en/kids/kids-girls/kids-girls-shoes/kids-girls-shoes-sports-shoes">Sports</a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Sandals &amp; Flip Flops "
-                                                        data-link-location="top-nav-level-4" href="/in/en/kids/kids-girls/kids-girls-shoes/kids-girls-shoes-slides-sandals">Sandals &amp; Flip Flops </a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="School Shoes" data-link-location="top-nav-level-4"
-                                                        href="/in/en/kids/kids-girls/kids-girls-shoes/kids-girls-shoes-school-shoes">School Shoes</a></li>
-                                            </ul>
-                                        </li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="Clothing" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-girls/kids-girls-clothing">Clothing</a>
-                                            <ul class="pt-1 pb-2">
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="T-Shirt" data-link-location="top-nav-level-4"
-                                                        href="/in/en/kids/kids-girls/kids-girls-clothing/kids-girls-clothing-tops">T-Shirt</a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Hoodies &amp; Sweatshirts"
-                                                        data-link-location="top-nav-level-4" href="/in/en/kids/kids-girls/kids-girls-clothing/kids-girls-clothing-hoodies-sweatshirt">Hoodies &amp; Sweatshirts</a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Jackets" data-link-location="top-nav-level-4"
-                                                        href="/in/en/kids/kids-girls/kids-girls-clothing/kids-girls-clothing-jackets">Jackets</a></li>
-                                                <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-4" class="tw-hqslau tw-xbcb1y text-base px-6 py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Pants &amp; Shorts"
-                                                        data-link-location="top-nav-level-4" href="/in/en/kids/kids-girls/kids-girls-clothing/kids-girls-clothing-bottoms">Pants &amp; Shorts</a></li>
-                                            </ul>
-                                        </li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="AGE 0-4 YEARS"
-                                                data-link-location="top-nav-level-3" href="/in/en/kids/kids-girls/kids-girls-age-0-4-years">AGE 0-4 YEARS</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="AGE 4-8 YEARS"
-                                                data-link-location="top-nav-level-3" href="/in/en/kids/kids-girls/kids-girls-age-4-8-years">AGE 4-8 YEARS</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black block font-bold" role="menuitem" data-link-name="AGE 8-16 YEARS"
-                                                data-link-location="top-nav-level-3" href="/in/en/kids/kids-girls/kids-girls-age-8-16-years">AGE 8-16 YEARS</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Sports">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Sports" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/kids/kids-sports">Sports</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Football" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-sports/kids-sports-football">Football</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Cricket" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-sports/kids-sports-cricket">Cricket</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Basketball" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-sports/kids-sports-basketball">Basketball</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Running" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-sports/kids-sports-running">Running</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Indoor Sports" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-sports/kids-sports-indoor-sports">Indoor Sports</a></li>
-                                    </ul>
-                                    <ul class="w-1/5 min-w-9.6 flex-shrink-0 pr-5" role="menu" aria-label="Motorsport">
-                                        <li class="border-b-2 mb-2 border-puma-black pb-2" role="none"><a aria-disabled="false" data-test-id="top-nav-level-2-top" class="tw-hqslau tw-xbcb1y text-puma-black hover:text-puma-gold pb-0.5 text-lg font-bold" role="menuitem" data-link-name="Motorsport" data-link-location="top-nav-level-2-top"
-                                                href="/in/en/kids/kids-motorsport">Motorsport</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Scuderia Ferrari" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-motorsport/kids-motorsport-scuderia-ferrari">Scuderia Ferrari</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="BMW M Motorsport" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-motorsport/kids-motorsport-bmw-m-motorsport">BMW M Motorsport</a></li>
-                                        <li role="none"><a aria-disabled="false" data-test-id="top-nav-level-3" class="tw-hqslau tw-xbcb1y text-base py-1 leading-6 text-puma-black-300 hover:text-puma-black" role="menuitem" data-link-name="Mercedes AMG Petronas" data-link-location="top-nav-level-3"
-                                                href="/in/en/kids/kids-motorsport/kids-motorsport-mercedes-amg-petronas">Mercedes AMG Petronas</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-test-id="main-nav-category-item" role="none" class="group whitespace-nowrap flex">
-                        <div class="flex self-stretch hover:nav-fade-non-selected" data-test-id="hoverable-nav-item">
-                            <div class="flex-1 flex relative"><a aria-disabled="false" class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold" data-link-name="FENTY x PUMA" data-link-location="top-nav-level-1" role="menuitem" aria-haspopup="true" aria-expanded="false"
-                                    href="/in/en/fenty"><span class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected">FENTY x PUMA</span></a></div>
-                            <div class="scale-y-100 opacity-100 absolute left-0 bottom-0 origin-top translate-y-full bg-white flex w-full text-puma-black-400 overflow-x-auto shadow-xl py-10 xl:py-12 transition-[transform,opacity] duration-0 scale-y-0 z-0"
-                                data-test-id="secondary-nav-menu">
-                                <div class="flex w-full max-w-screen-3xl mx-auto px-10">
-                                    <ul class="ml-2 p-2 w-full flex flex-row flex-wrap" role="menu" aria-label="FENTY x PUMA"></ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                                        
+                                       
+                                    
+                                       
+                                    
+                                    
+                    
+                    
                     <li data-test-id="main-nav-category-item" role="none" class="group whitespace-nowrap flex">
                         <div class="flex self-stretch hover:nav-fade-non-selected" data-test-id="hoverable-nav-item">
                             <div class="flex-1 flex relative"><a aria-disabled="false" class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold" data-link-name="Motorsport" data-link-location="top-nav-level-1" role="menuitem" aria-haspopup="true" aria-expanded="false"
@@ -4616,40 +4397,7 @@
             </div>
         </div>
     </main>
-    <div>
-        
     
-         <!-- main part -->
-         <div class="content">
-            <div class="sub-content">
-                <h4>Home</h4>
-                <ul style="list-style-type:disc">
-                    <li>Men</li>
-                  </ul>
-             </div>
-             <h1>MEN</h1>
-             <hr style="margin-top: 20px;">
-             <div class="middle">
-                <div class="filter">
-                   <div> FILTERS (0) </div>
-                   <img src="data:image/png;base64,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" height="20px" width="20px" alt="">
-                   
-                </div>
-                <div class="sort">
-                    <div style="font-size: 14px;">SORT BY</div>
-                    <i class="material-icons">expand_more</i>
-                </div>
-             </div>
-             <hr>
-         </div>
-    
-         <div class="content2">
-            <span>3900 PRODUCTS</span>
-            <div class="content2-icons">
-                <i class="material-icons">grid_view</i> 
-                <i class="material-icons" style="border: 1px solid black;">apps</i>
-            </div>
-         </div>
     
          <!-- Product part -->
     
@@ -5693,6 +5441,16 @@
                     <hr class="span-2"> 
                 </div>
     </div>
+    <div class="container">
+        <div class="video-container">
+          <video src="https://cdn.sanity.io/files/qa41whrn/staging/9786423c096b6e0aeb06e5aa424d88cb60f754e8.mp4" autoplay loop muted></video>
+        </div>
+        <div class="content">
+          <h1>MB.03 x DEXTER'S LABORATORY</h1>
+          <h2>MELO'S LATEST EXPERIMENT</h2>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
     <footer role="contentinfo" class="font-display relative bg-puma-black-100 text-puma-black-400" aria-label="Main Footer">
         <nav class="w-full mx-auto tw-1ku4kiq tw-8iwcw3 py-8 lg:py-10 text-neutral-20 space-y-6" aria-label="Footer Nav" data-uds-child="container">
             <div data-test-id="footer-top" data-uds-child="container" class="w-full mx-auto tw-3asyq7 tw-8iwcw3 flex flex-col lg:flex-row justify-between gap-2" data-footer-position="top">
