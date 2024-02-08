@@ -1,92 +1,81 @@
-body{
-    margin:0px;
+body {
+    margin: 0;
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
-.navbar {
-    
-    background-color:black;
-    height: 80px;
-    display: flex;
-    justify-content:start;
-    align-items: center;
-}
-  
-.navbar-container {
-    margin-left: 30px;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-  
-.navbar-brand {
-    height: 40px;
+.box {
+    background-color: 
+    RGB(138, 115, 80);
     padding: 10px;
-}
-  
-.navbar-logo {
-    height: 40px;
-    max-width: 100%;
-}
-  
-.navbar-nav {
-    
-    height: 50px;
-}
-  
-.navbar-menu {
-    margin-top: 2px;
-    margin-bottom: 15px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: justify;
-    list-style-type: none;
-    padding: 0;
-}
-  
-.navbar-item {
     text-align: center;
-    padding: 0 10px;
+    height: 30px;
 }
   
-.navbar-link {
+.box2 {
+    font-size: 14px;
+    font-weight: 550;
+    margin: 5px;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+
+    background-color:black;
+    height:90px;
+    width: 100%;
+    position: relative;
+}
+  
+ul {
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    /* list-style-type: none; */
+    margin-left: 15px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+  
+li {
+    display: inline-block;
+}
+  
+a {
     font-weight: bold;
     display: block;
-    padding: 10px;
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
     text-decoration: none;
 }
-  
-.navbar-actions {
-    width: 500px;
-    display: flex;
-    align-items: center;
-    margin-left:100px;
-} 
-form.example input[type=text] {
-    font-weight: bold;
-    font-size: 28px;
-    padding: 10px;
-    font-size: 12px;
-    border: 1px solid grey;
-    float: left;
-    width: 30%;
-    background: black;
-    
+.search{
+    border: 1px solid rgb(181, 190, 190);
+
 }
-.navbar-cart-btn{
-    margin-right: 40px;
-    padding-right:5px;
-    padding-left:5px;
-    color:black;
+  
+.spacer {
+    flex: 1;
+    min-width: 250px; /* Adjust the width as needed */
+}
+.spacer2 {
+    flex: 1;
+    min-width: 10px; /* Adjust the width as needed */
+}
+.spacer3 {
+    flex: 1;
+    min-width: 1px; /* Adjust the width as needed */
 }
 
 .red-div {
-    height: 140px; 
+    height: 130px;
+    width:auto; 
     background-image: url('https://cdn.sanity.io/images/qa41whrn/staging/297cf9875d0e91e25d566c3e43850aae3809e84c-6000x355.jpg?w=2160&q=80&auto=format');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
     
 }
 .innerdiv{
@@ -96,10 +85,11 @@ form.example input[type=text] {
     font: size 18px;
     letter-spacing:0.5px;
     /*border: 5px solid #000;*/
+    
 }  
 .flat{
     line-height: 1;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     margin-bottom:5px;
     padding:6px;
@@ -108,6 +98,7 @@ form.example input[type=text] {
     right:50%;
     font-weight: bold;
     white-space: nowrap;
+    font-weight: 500;
 }
 .endof-season{
     line-height: 0px;
@@ -119,6 +110,7 @@ form.example input[type=text] {
     right:50%;
     margin-bottom: 10px;
     text-align:center;
+    font-weight: 500;
 }
 .shop-now{
     
@@ -133,6 +125,7 @@ form.example input[type=text] {
     text-align: center;
     text-decoration: underline ;
     text-underline-offset: 3px;
+    font-weight: 500;
 }
 .prepaid{
     
@@ -145,12 +138,6 @@ form.example input[type=text] {
     white-space: nowrap;
     text-align: center;
 }
-.full-width-div {
-    /*position: relative;*/
-    background-color: white;
-    height: auto;
-    
-}
 .homenew{
     margin-top: 3%;
     margin-left: 30px;
@@ -161,207 +148,122 @@ form.example input[type=text] {
     margin-left: 30px;
     font-size: 16px;
 }
-.filter-main{
-    border-top: 0.5px solid #ccc;
-    margin-left: 30px;
-    margin-right:30px;
-    display: flex;
-    /* background-color: aqua; */
-    padding: 10px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 0px;
-    
-}
 
-.flex-item{
-    width: 20%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-right: 40px;
-    
-}
-
-#dropdown1{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 130px;
-}
-#dropdown2{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 150px;
-
-}
-#dropdown3{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 90px;
-
-
-}
-#dropdown4{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 100px;
-
-}
-#dropdown5{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 80px;
-
-}
-#dropdown6{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 90px;
-    
-
-} 
-#dropdown7{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 110px;
-
-} 
-#dropdown8{
-    font-weight: bold;
-    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    width: 250px;
-
-}
-.p910{
-    border-top: 0.5px solid #ccc;
-    margin-left: 30px;
-    margin-right:30px;
-    display: flex;
-    /* background-color: aqua; */
-    padding: 5px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    
-}
-.pp910{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 20px;
-    font-weight: 600;
-    
-}
-.grid2{
-    margin-top: 5px;
-    
-    margin-bottom: 20px;
-    margin-left:78%;
-    text-align:right;
-    font-size: 30px;
-    font-weight: 50;
-}
-hr{
-    height: 1px;
-    background-color: #e5e5e5;
-    border: none;
-   }
-   .down-arrow {
-    justify-content: center;
-   }
-   .sort img {
-    padding-left: 10px;
-    padding-top: 10px;
-   }
-   .content2 {
+.filter {
+    background-color:white;
+    height:90px;
     width: 100%;
-    height: 90px;
+    position: relative;
+    display: flex;
+}
+.flex-item{
+    
+    align-items: center;
+    margin-left: 30px; 
+    overflow: hidden;
+
+}
+
+.dropdown{
+    
+    font-weight: bold;
+    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid  #ccc;
+    text-align: justify;
+    width: auto;
+    margin-top:30px;
+    margin-right:10px;
+}
+.dropdown1{
+    width: auto;
+    font-weight: bold;
+    font-family: BlinkMacSystemFont"Segoe UI"Roboto"Helvetica Neue"Arial sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid  #ccc;
+    margin-top:30px;
+    margin-left:50px;
+}
+.flex-item2{
+    align-items: center;
+    margin-left: 40px; 
+    overflow: hidden;
+
+}
+.content2 {
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-   }
-   .content2-icons {
-       width: 82px;
-       height: 40px;
+    
+    overflow: hidden;
+}
+.content2-icons {
+    width: 82px;
+    height: 40px;
+    margin-right: 20px;
+
        
-   }
-   .content2 span {
-       font-weight: 700;
-       font-size: large;
-   }
-   .content2 .material-icons {
+}
+.content2 span {
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: 500;
+    
+}
+.content2 .material-icons {
     margin-right: 10px;
-   }
-   .product{
+}
+.product-main{
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.product{
+   
     height:500px;
-   }
-   .video2{
+    
+}
+.video2{
     height:500px;
     width:400px;
-    justify-content: center;
-   }
+    justify-content:space-between
+}
 
-   .product-list{
+.product-list{
+    width: auto;
+    height: auto;
+    overflow: hidden;
    
-   height: 400px;
-   margin-left:30px;
-   margin-right:30px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   background-color: white;
-   }
-   .product-list .product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product-list .product{
+    position: relative;
+    overflow: hidden;
    width: 24%;
    display: flex;
    flex-direction: column;
    margin-bottom: 3%;
-   }
-   .product-list .product .image{
+}
+.product-list .product .image{
+    overflow: hidden;
      width: 100%;
      height: 100%;
      background-color: #FAFAFA;
-   }
-   .image img{
+}
+.image img{
      height: 300px;
      width: 300px;
      object-fit:cover
-   }
+}
    
-   .image-span{
+.image-span{
      margin:1px;
      text-align:justify ;
      /*position: absolute;*/
@@ -373,34 +275,34 @@ hr{
      
      
      /* border:  2px solid green; */
-   }
-   .horizontal-line{
+}
+.horizontal-line{
      width: 100%;
      display: flex;
      position: relative;
-   }
-   .horizontal-line .span-1{
+}
+.horizontal-line .span-1{
      width: 15%;
      height: 7px;
      position: absolute;
      background-color: rgb(108, 107, 106);
      border-radius: 5px;
      /* border:  2px solid pink; */
-   }
-   .horizontal-line .span-2{
+}
+.horizontal-line .span-2{
      width: 100%;
      height: 8px;
      background-color: lightgray;
      border-radius: 5px;
-   }
-   .product-name{
+}
+.product-name{
      display: flex;
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
      /* border:  2px solid green; */
-   }
-   .product-name h5{
+}
+.product-name h5{
      /* width: 181px; */
      margin-top: 0;
      height: 48px;
@@ -413,25 +315,24 @@ hr{
      align-items: center;
      margin-top: -25px;
      /* border:  2px solid green; */
-   }
-   .product-name .price{
+}
+.product-name .price{
      display: flex;
      flex-direction: column;
      width: 48px;
      height: 48px;
      /* border: 2px solid aqua; */
    
-   }
-   .bottom p{
+}
+.bottom p{
      font-weight: 700;
      width: 230px;
      height: 16px;
      color: #DC2626;
      font-size: 12px;
      margin-top: 5px;
-   }
-
-   .footer-content{
+}
+.footer-content{
     width: 97%;
     height: 200px;;
     /* border: 1px solid green; */
@@ -441,35 +342,37 @@ hr{
     margin-right: 20px;
     color: #191919;
 
-  }
-  .footer-content p{
+}
+.footer-content p{
     margin-bottom: 10px;
     margin-top: 10px;
     letter-spacing: normal;
 
-  }
-  .footer-content .first{
+}
+.footer-content .first{
     width: 100%;
     height:75px;
 
-  }
-  .footer-content .second{
+}
+.footer-content .second{
     width: 100%;
-    /* height:25px; */
     margin-bottom: 20px;
 
-  }
-  .footer-content .third{
+}
+.footer-content .third{
     width: 100%;
-    /* height:25px; */
     margin-bottom: 20px;
 
-  }
-  .first{
+}
+.first{
     padding-right: 20px;
 
-  }
-  .second{
+}
+.second{
     padding-right: 20px;
 
-  }
+}
+
+
+
+  
