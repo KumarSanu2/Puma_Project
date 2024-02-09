@@ -5,11 +5,19 @@
     font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .box {
-    background-color:  RGB(138, 115, 80);
-    padding: 10px;
-    text-align: center;
-    height: 45px;
-    color:#FFFFFF;
+  background-color: 
+  RGB(138, 115, 80);
+  padding: 10px;
+  text-align: center;
+  height: 45px;
+}
+
+.box2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px;
+  color: white;
+  text-align: center;
 }
   
 .navbar {
