@@ -9,7 +9,6 @@ body {
   text-align: center;
   height: 30px;
 }
-
 .box2 {
   font-size: 14px;
   font-weight: 550;
@@ -19,10 +18,10 @@ body {
 }
 
 .navbar {
-
+  overflow: hidden;
   background-color:black;
   height:90px;
-  width: 100%;
+  width: auto;
   position: relative;
 }
 
@@ -31,14 +30,15 @@ ul {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: justify;
-  /* list-style-type: none; */
   margin-left: 15px;
   padding: 5px;
   overflow: hidden;
 }
-
-
+li:hover {
+  background-color: #242424;
+}  
 li {
+
   display: inline-block;
 }
 
@@ -113,7 +113,6 @@ a {
   font-weight: 500;
 }
 .shop-now{
-  
   line-height: 1;   
   font-size: 15px;
   color:white;
@@ -128,7 +127,6 @@ a {
   font-weight: 500;
 }
 .prepaid{
-  
   line-height: 0.4;
   font-size: 12px;
   color:white;
@@ -151,13 +149,12 @@ a {
 
 .filter {
   background-color:white;
-  height:90px;
+  height:60px;
   width: 100%;
   position: relative;
   display: flex;
 }
 .flex-item{
-  
   align-items: center;
   margin-left: 30px; 
   overflow: hidden;
@@ -173,7 +170,7 @@ a {
   border: 1px solid  #ccc;
   text-align: justify;
   width: auto;
-  margin-top:30px;
+  margin-top:10px;
   margin-right:10px;
 }
 .dropdown1{
@@ -183,30 +180,26 @@ a {
   font-size: 16px;
   padding: 10px;
   border: 1px solid  #ccc;
-  margin-top:30px;
+  margin-top:10px;
   margin-left:50px;
 }
 .flex-item2{
   align-items: center;
   margin-left: 40px; 
   overflow: hidden;
-
 }
 .content2 {
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   overflow: hidden;
 }
 .content2-icons {
   width: 82px;
   height: 40px;
-  margin-right: 20px;
-
-     
+  margin-right: 20px;      
 }
 .content2 span {
   font-size: 20px;
@@ -217,161 +210,146 @@ a {
 .content2 .material-icons {
   margin-right: 10px;
 }
-.product-main{
-  margin-left: 30px;
-  margin-right: 30px;
-  
-}
-.product{
- 
-  height:500px;
-  
-}
-.video2{
-  height:500px;
-  width:400px;
-  justify-content:space-between
-}
-
 .product-list{
-  width: auto;
+  width: 99%;
   height: auto;
-  overflow: hidden;
- 
+  margin-left:10px;
+  margin-right:30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  overflow: hidden;
+  background-color: white;
 }
 .product-list .product{
-  position: relative;
-  overflow: hidden;
- width: 24%;
- display: flex;
- flex-direction: column;
- margin-bottom: 3%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
 }
 .product-list .product .image{
-  overflow: hidden;
-   width: 100%;
-   height: 100%;
-   background-color: #FAFAFA;
-}
-.image img{
-   height: 300px;
-   width: 300px;
-   object-fit:cover
-}
- 
-.image-span{
-   margin:1px;
-   text-align:justify ;
-   /*position: absolute;*/
-   width: 50px;
-   height: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
 
-   padding: 0px 5px;
-   color: white;
-   
-   
-   /* border:  2px solid green; */
+}
+.product-list .product video{
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+
+} 
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.image span{
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  background: #AC1E1E;
+  padding: 0px 2px;
+  text-align: center;
+  color: white;
+}
+.colors{
+  margin-bottom:10px;
+  font-size: 12px;
 }
 .horizontal-line{
-   width: 100%;
-   display: flex;
-   position: relative;
+  width: 100%;
+  display: flex;
+  position: relative;
 }
 .horizontal-line .span-1{
-   width: 15%;
-   height: 7px;
-   position: absolute;
-   background-color: rgb(108, 107, 106);
-   border-radius: 5px;
-   /* border:  2px solid pink; */
+  width: 15%;
+  height: 8px;
+  position: absolute;
+  background-color: darkslategrey;
+  border-radius: 5px;
 }
 .horizontal-line .span-2{
-   width: 100%;
-   height: 8px;
-   background-color: lightgray;
-   border-radius: 5px;
+  width: 100%;
+  height: 8px;
+  background-color: lightgray;
+  border-radius: 5px;
 }
 .product-name{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   /* border:  2px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+   
 }
 .product-name h5{
-   /* width: 181px; */
-   margin-top: 0;
-   height: 48px;
-   color: #191919;
-   font-size: 16px;
-   padding: 0px 20px 0px 0px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: -25px;
-   /* border:  2px solid green; */
+  margin-top: 0;
+  height: 45px;
+  color: #191919;
+  font-size: 16px;
+  padding: 0px 20px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -25px;
+   
 }
 .product-name .price{
-   display: flex;
-   flex-direction: column;
-   width: 48px;
-   height: 48px;
-   /* border: 2px solid aqua; */
- 
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
 }
-.bottom p{
-   font-weight: 700;
-   width: 230px;
-   height: 16px;
-   color: #DC2626;
-   font-size: 12px;
-   margin-top: 5px;
+.bottom{
+  color: rgb(220, 19, 19);
+  font-weight: 650;
+  font-size: 12px;
 }
 .footer-content{
   width: 97%;
   height: 200px;;
-  /* border: 1px solid green; */
   font-size: 15px;
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
   color: #191919;
-
 }
 .footer-content p{
   margin-bottom: 10px;
   margin-top: 10px;
   letter-spacing: normal;
-
 }
 .footer-content .first{
   width: 100%;
   height:75px;
-
 }
 .footer-content .second{
   width: 100%;
   margin-bottom: 20px;
-
 }
 .footer-content .third{
   width: 100%;
   margin-bottom: 20px;
-
 }
 .first{
   padding-right: 20px;
-
 }
 .second{
   padding-right: 20px;
-
 }
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
 
+  width: 100%;
+}
 
 
