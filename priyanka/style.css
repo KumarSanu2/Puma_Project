@@ -20,66 +20,56 @@
   text-align: center;
 }
   
-.navbar {
-  background-color:black;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-brand {
-  height: 40px;
-  padding: 10px;
-}
-
-.navbar-logo {
-  height: 40px;
-  max-width: 100%;
-}
-
-.navbar-nav {
-  height: 40px;
-}
-
-.navbar-menu {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-}
-
-.navbar-item {
-  padding: 0 10px;
-}
-
-.navbar-link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.navbar-link:hover {
-  background-color: #555;
-}
-
-.navbar-actions {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-search-btn,
-.navbar-cart-btn,
-.navbar-user-btn {
-  background: none;
-}
+ .navbar {
+    overflow: hidden;
+    background-color:black;
+    height:70px;
+    width: 100%;
+    position: relative;
+  }
+  
+  ul {
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-left: 15px;
+    padding: 5px;
+    overflow: hidden;
+  }
+  li:hover {
+    background-color: #242424;
+  }  
+  li {
+  
+    display: inline-block;
+  }
+  
+  a {
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  .search{
+    border: 1px solid rgb(181, 190, 190);
+  
+  }
+  
+  .spacer {
+    flex: 1;
+    min-width: 250px; /* Adjust the width as needed */
+  }
+  .spacer2 {
+    flex: 1;
+    min-width: 10px; /* Adjust the width as needed */
+  }
+  .spacer3 {
+    flex: 1;
+    min-width: 1px; /* Adjust the width as needed */
+  }
 .promo-banner {
    background-image: url("https://cdn.sanity.io/images/qa41whrn/staging/297cf9875d0e91e25d566c3e43850aae3809e84c-6000x355.jpg?w=2160&q=80&auto=format");
    display: flex;
